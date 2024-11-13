@@ -4,7 +4,7 @@ h3 {
 
 .footer-menu {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   margin-top: auto;
   position: sticky;
@@ -22,5 +22,19 @@ h3 {
     aspect-ratio: 1 / 1;
     height: 100%;
     width: 100%;
+  }
+}
+
+.filter-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 20%;
+  img {
+    object-fit: contain;
+    aspect-ratio: 1 / 1;
+    height: 80%;
+    width: 80%;
   }
 }

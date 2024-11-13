@@ -1,4 +1,4 @@
-export let data = {
+export let fakeData = {
   "status": "ok",
   "totalResults": 11977,
   "articles": [
@@ -13,7 +13,7 @@ export let data = {
           "url": "https://www.mediaite.com/podcasts/scott-galloway-calls-musk-bankrolling-trump-the-best-trade-of-2024-as-kara-swisher-predicts-an-inevitable-falling-out/",
           "urlToImage": "https://www.mediaite.com/wp-content/uploads/2024/11/AP24281826527548.jpg",
           "publishedAt": "2024-11-11T23:21:31Z",
-          "content": "AP Photo/Evan Vucci, File\r\nKara Swisher and Scott Galloway discussed Donald Trumps resounding victory over Kamala Harris late last week and both apologized to their Pivot podcast audience for predict… [+3396 chars]"
+          "content": "AP Photo/Evan Vucci, File\r\nKara Swisher and Scott Galloway discussed Donald Trumps resounding victory over Kamala Harris late last week and both apologized to their Pivot podcast audience for predicted that Musk would merge X, formerly Twitter, with Trump\’s Truth Social. Galloway, an entrepreneur and marketing professor, argued that the prediction had merit and noted: You\’re saying a reverse merger. You have a public vehicle with Truth Social. Yeah. Yeah. That would be a massive dilution for Twitter shareholders who would basically be getting 3 million revenue and have to give up a third or half the company. So but it would be a way to your point of funneling billions of dollars from Musk to Donald Trump, legally, as far as I can tell. Later in the podcast, Swisher predicted that Musk and Trump would eventually have a falling out. “Elon, as usual, the circus clown likes to take all the attention. As Bloomberg put it, Elon is about to find out what $130 million for Trump gets him. We mentioned the Tesla stock surge. That\’s added $26 billion to his net worth, but Elon stands to benefit in a number of other ways, including government efficiency commission role, and autonomous driving policies that benefit Tesla and more government contracts for SpaceX,” Swisher began, adding: Trump has previously pledged his support for Elon\’s goal of sending a rocket to Mars. That one I don\’t mind so much. I honestly don\’t. And as I mentioned, I think Elon merges X with Truth Social. So I also think they\’re going to have a falling out. “I really feel like this is coming. If I had to make any one prediction, that\’s what I feel like. Peter is very quiet in the background and gets exactly what he wants,” Swisher added, referring to billionaire Peter Thiel who has bankrolled JD Vance\’s political career. “Elon can\’t help himself and neither can Trump and Trump\’s the president. So thoughts?” she pressed Galloway. “Look arguably, you could say that Musk\’s $119 million in donations to Trump were one of the best investments that\’s ever been made. He made it over approximately 3 or 6 months, and in exchange, his net worth has gone up $15 billion just from his Tesla shares, which he skyrocketed on news that Trump was retaking the White House,” Galloway replied, adding: So if someone said to any billionaire or any institution or any hedge fund, here\’s $119 million, if you give us $119 million, we think if the markets are right, there\’s a two thirds chance you\’re going to get 15 billion back. Yep. So you got to give it to the guy. The best, best investment of the year was Musk– His $119 million investment in the Trump campaign. “Yeah, because it was if she had won, he was never going to get that dinged for it also,” Swisher agreed. “That\’s exactly right. 15 billion on 119 million. That\’s the best trade of 2024,” Galloway concluded. Listen to the full podcast here."
       },
       {
           "source": {
@@ -1305,4 +1305,4 @@ export let data = {
   ]
 }
 
-export default data;
+export default fakeData;
