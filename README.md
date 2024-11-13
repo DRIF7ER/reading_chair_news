@@ -1,6 +1,6 @@
 # Reading Chair News
 
-Welcome to Reading Chair News! We strive to serve up the latest in Newsworthy reporting, bringing you a world of information; in the palm of your hand!
+Welcome to Reading Chair News! We strive to serve up the latest in Newsworthy reporting, bringing you a world of information; in the palm of your hand! ![Alt text](./src/readingChairNewsLogo.png?raw=true "Title")
 
 ## Description
 
@@ -17,7 +17,5 @@ You may need to install:
 
 ## Authors
 
-Contributors names and contact info
-
 Created By: Charles Banks
-ex. [@DRIF7ER](https://github.com/DRIF7ER)
+[@DRIF7ER](https://github.com/DRIF7ER)
