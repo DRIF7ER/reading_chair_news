@@ -3,6 +3,15 @@ import Card from '../Card/Card';
 import fakeData from '../../fakeNews';
 import { useState, useEffect } from 'react';
 
+// function FilterByTitle ({someData, aSearch}) {
+//   console.log(someData.articles, aSearch, '<-- CHECK HERE')
+//   return (
+//  {   if (someData.title.includes(aSearch)) {
+//       someData.title.includes(aSearch)
+//     }}
+//   )
+// };
+
 export function FilteredPage({ toBeFiltered, reading, data }) {
   const [filterdArticle, setFilteredArticle] = useState('')
   const [searchVal, setSearchVal] = useState('');
@@ -21,20 +30,16 @@ export function FilteredPage({ toBeFiltered, reading, data }) {
     setSearchVal(searchValue.target.value);
   }
 
-  // function handleCheckbox(event) {
-  //   console.log(event.target.value, '<-- CHECKBOX EVENT')
-  //   if (event.target.value === 'title') {
-  //     setTheFilter('title')
-  //   } else if (event.target.value === 'content') {
-  //     setTheFilter('content')
-  //   } else if (event.target.value === 'date') {
-  //     setTheFilter('date')
-  //   }
-  //   setTheFilter('')
-  //   // setTimeout(() => {
-  //   //   console.log('TIMEOUT FIRED')
-  //   // }, 0)
-  // };
+  function handleCheckbox(event) {
+    console.log(event.target.value, '<-- CHECKBOX EVENT')
+    if (event.target.value === 'title') {
+      setTheFilter('title')
+    } else if (event.target.value === 'content') {
+      setTheFilter('content')
+    } else if (event.target.value === 'date') {
+      setTheFilter('date')
+    }
+  };
 
   if (filtered === 'filter') {
     return (
@@ -45,18 +50,20 @@ export function FilteredPage({ toBeFiltered, reading, data }) {
             <input type={'text'} id={'search-value'} onChange={(value) => handleSearchValue(value)} />
           </div>
           <div className={'title-option option'}>
-            <input type={'radio'} id={'title'} name={'filter-options'} value={'title'} />
+            <input type={'radio'} id={'title'} name={'filter-options'} value={'title'} onChange={(event) => handleCheckbox(event)} />
             <label for={'title'}>Search In Titles</label>
           </div>
           <div className={'content-option option'}>
-            <input type={'radio'} id={'content'} name={'filter-options'} value={'content'} />
+            <input type={'radio'} id={'content'} name={'filter-options'} value={'content'} onChange={(event) => handleCheckbox(event)} />
             <label for={'content'}>Search In Article Content</label>
           </div>
           <div className={'date-option option'}>
-            <input type={'radio'} id={'date'} name={'filter-options'} value={'date'} />
+            <input type={'radio'} id={'date'} name={'filter-options'} value={'date'} onChange={(event) => handleCheckbox(event)} />
             <label for={'date'}>Search By Date</label>
           </div>
         </div>
+        {/* {console.log(data.articles[0].author, searchVal, theFilter, '<-- HERE')}
+          {(theFilter === 'title' ? data.articles.map(<FilterByTitle someData={data} aSearch={searchVal} />) : '')} */}
         {/* {console.log(theFilter, '<-- OUTSIDE OF FILTER')}
         {data.articles.filter((article) => {
           console.log(theFilter === 'title' && article.title.includes(searchVal), theFilter, searchVal, '<-- ARTICLE B4 RETURN')
