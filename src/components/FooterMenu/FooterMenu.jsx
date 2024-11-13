@@ -1,8 +1,13 @@
 import './FooterMenu.css';
+import readingChairNewsLogo from '../../readingChairNewsLogo.png'
 
 export function FooterMenu () {
   return (
-    <h3>I will be a component...</h3>
+    <div className={'footer-menu'}>
+      <div className={'home-button'}>
+        <img className={'home-icon'} src={readingChairNewsLogo} />
+      </div>
+    </div>
   )
 }
 

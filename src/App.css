@@ -1,13 +1,13 @@
-* {
+/* * {
   border: 1px solid red;
-}
+} */
 
 .App {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   width: 100vw;
-  height: 200vw;
+  min-height: 70vw;
   text-align: center;
 }
 

@@ -5,7 +5,8 @@
   justify-content: flex-start;
   width: 100vw;
   height: 200vw;
-  margin-top: 16%;
+  margin-top: 19%;
+  overflow-y: scroll;
   * {
     margin: 0;
   }
@@ -18,17 +19,22 @@
   align-items: center;
   width: 93%;
   height: 60%;
+  border-radius: 10px;
+  background-color: #363636;
 }
 
 .image-box {
   width: 100%;
   height: 30%;
   object-fit: contain;
+  border-radius: 10px;
   img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
+    object-position: top;
     aspect-ratio: 1 / 1;
+    border-radius: 10px 10px 0px 0px;
   }
 }
 

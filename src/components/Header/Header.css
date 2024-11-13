@@ -1,19 +1,10 @@
 .header {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   position: fixed;
   width: 100%;
-  height: 15vw;
-  background-color: darkgrey;
-}
-
-.logo-and-title-wrap {
-  display: flex;
-  align-items: center;
-  /* justify-content: flex-start; */
-  width: 100%;
-  height: 75%;
+  height: 17vw;
+  background-color: #363636;
 }
 
 .logo-box {
@@ -23,27 +14,46 @@
   width: 20%;
   height: 100%;
   .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100%;
     object-fit: contain;
+    object-position: center;
     aspect-ratio: 1 / 1;
   }
+}
+
+.title-and-date-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: baseline;
+  width: 80%;
+  height: 100%;
 }
 
 .title {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 80%;
-  height: 25%;
+  width: 100%;
+  height: 70%;
   h1 {
     width: 100%;
+    height: 85%;
     margin: 0;
     object-fit: contain;
   }
 }
 
 .todays-date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 30%;
   p{
     margin: 0;
   }
