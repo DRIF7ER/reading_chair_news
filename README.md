@@ -1,4 +1,4 @@
-# Project Title
+# Reading Chair News
 
 Welcome to Reading Chair News! We strive to serve up the latest in Newsworthy reporting, bringing you a world of information; in the palm of your hand!
 
