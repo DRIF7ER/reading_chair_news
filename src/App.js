@@ -6,7 +6,7 @@ import FooterMenu from './components/FooterMenu/FooterMenu.jsx';
 import ArticleView from './components/ArticleView/ArticleView.jsx';
 import FilteredPage from './components/FilteredPage/FilteredPage.jsx';
 import { fetchLastThreeMonths } from './components/ApiCalls/ApiCalls.js';
-import fakeData from './fakeNews.js';
+// import fakeData from './fakeNews.js';
 import {useEffect, useState} from 'react';
 
 function App() {
@@ -28,7 +28,7 @@ function App() {
       <Header reading={[isReading, setIsReading]} />
       {/* {(filtered ? <FilteredPage toBeFiltered={[filtered, setFiltered]} reading={[isReading, setIsReading]} data={data} /> : '')}
       {(isReading ? <ArticleView isReading={isReading} /> : <Home reading={[isReading, setIsReading]} data={data} />)} */}
-      {((!isReading) ? (!filtered) ? <Home reading={[isReading, setIsReading]} data={data} /> : <FilteredPage toBeFiltered={[filtered, setFiltered]} reading={[isReading, setIsReading]} data={fakeData} /> : <ArticleView isReading={isReading} />)}
+      {((!isReading) ? (!filtered) ? <Home reading={[isReading, setIsReading]} data={data} /> : <FilteredPage toBeFiltered={[filtered, setFiltered]} reading={[isReading, setIsReading]} data={data} /> : <ArticleView isReading={isReading} />)}
       <FooterMenu reading={[isReading, setIsReading]} toBeFiltered={[filtered, setFiltered]} />
     </div>
   );
